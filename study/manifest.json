@@ -453,9 +453,228 @@
      "note": ""
     }
    ]
+  },
+  {
+   "id": "ref",
+   "points": 0,
+   "title": "Reference",
+   "part": "NLT vs NIV changes (2021-08-26)",
+   "source": "/workspace/jrbq-src/src/artifacts/browsed_files/151a2fd7929d6a27.pdf",
+   "pages": [
+    {
+     "file": "ref-01.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-02.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-03.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-04.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-05.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-06.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-07.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-08.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-09.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-10.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-11.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-12.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-13.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-14.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-15.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-16.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-17.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-18.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-19.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-20.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-21.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-22.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-23.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-24.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-25.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-26.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-27.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-28.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-29.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-30.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-31.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-32.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-33.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-34.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    },
+    {
+     "file": "ref-35.webp",
+     "w": 1400,
+     "h": 1812,
+     "note": ""
+    }
+   ]
   }
  ],
- "total_bytes": 16178122,
+ "total_bytes": 23736562,
  "sections": [
   {
    "points": 10,
