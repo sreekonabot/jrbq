@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1792631140|2869412';
+const CACHE_VERSION = '1792635749|2505688';
 /** @type {string} */
 const CACHE_PREFIX = 'JrBQ Bible Quiz-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
@@ -19,6 +19,31 @@ const CACHED_FILES = ["index.html","index.js","index.offline.html","index.icon.p
 /** @type {string[]} */
 const CACHEABLE_FILES = ["index.wasm","index.pck"];
 const FULL_CACHE = CACHED_FILES.concat(CACHEABLE_FILES);
+
+
+// JrBQ study pages: cache-first in their own cache, filled as pages are viewed
+// (or by "Save all pages for offline"). Kept across app updates.
+const STUDY_CACHE = 'jrbq-study-pages-v1';
+self.addEventListener('fetch', (event) => {
+	const url = new URL(event.request.url);
+	if (event.request.method !== 'GET' || url.origin !== self.location.origin) return;
+	const scope = new URL('./', self.location.href).pathname;
+	if (!url.pathname.startsWith(scope + 'study/')) return;
+	event.respondWith((async () => {
+		const cache = await caches.open(STUDY_CACHE);
+		const isManifest = url.pathname.endsWith('/manifest.json');
+		const hit = await cache.match(event.request, { ignoreSearch: true });
+		if (hit && !isManifest) return hit;
+		try {
+			const res = await fetch(event.request);
+			if (res.ok) cache.put(event.request, res.clone());
+			return res;
+		} catch (e) {
+			if (hit) return hit;
+			throw e;
+		}
+	})());
+});
 
 self.addEventListener('install', (event) => {
 	event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(CACHED_FILES)));
@@ -121,7 +146,7 @@ self.addEventListener(
 						}
 					}
 				}
-				let cached = await cache.match(event.request);
+				let cached = await cache.match(event.request, { ignoreSearch: isNavigate });
 				if (cached != null) {
 					if (ENSURE_CROSSORIGIN_ISOLATION_HEADERS) {
 						cached = ensureCrossOriginIsolationHeaders(cached);
