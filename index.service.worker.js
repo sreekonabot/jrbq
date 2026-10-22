@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1792636223|2608469|jrbq-2.1.0';
+const CACHE_VERSION = '1792696158|2583261|jrbq-2.2.0';
 /** @type {string} */
 const CACHE_PREFIX = 'JrBQ Bible Quiz-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
